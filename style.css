@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --input-color: #d9d9d9;
+    --background-color_main1:#221a2d;
+    --background-color_main2: #170f23;
+    --text-color: wheat;
+    --text-color-container: #ffff;
+    --color-hover: #393142;
+}
+ul{
+    padding: 0;
+}
+ul li a{
+    text-decoration: none;
+    
+}
+ul li{
+    list-style: none;
+}
+.body{
+    width: 100%;
+    height: 800px;
+}
+.main{
+    width: 100%;
+    display: flex;
+    height: 800px;
+}
+.main_sub1{
+    flex:1.3;
+    height: 100%;
+    background-color: var(--background-color_main1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.main_sub2{
+    flex:7;
+    height: 100%;
+    background-color: var(--background-color_main2);
+}
+.main_sub1-list{
+
+    flex:8;
+    display: flex;
+    flex-direction: column;
+    
+}
+.logo{
+    flex: 1;
+    width: 120px;
+   margin-left: 30px;
+   margin-bottom: 20px;
+}
+.logo_pic{
+   
+    width: 100%;
+    margin-top : 15px
+    
+}
+.logo_pic:hover{
+    cursor: pointer;
+    
+}
+.main_sub1-item{
+    margin-bottom: 10px;
+    /* background-color: red; */
+    padding: 10px;
+    margin-left: 10px;
+}
+.main_sub1-item:hover{
+    background-color: #393142;
+    border-left: solid 3px wheat;
+}
+.main_sub1-item-link{
+    
+    color: #dadada;
+    
+}
+.bx{
+    color: var(--text-color);
+}
+.main_sub1-list{
+    padding: 0;
+}
+
+.header_sub{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_sub1{
+    margin-left: 50px;
+}
+.header_sub2{
+    display: flex;
+}
+.header_sub-search{
+    width: 450px;
+    background-color: #2d2536;
+    padding: 10px 10px 10px 30px;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    
+}.header_sub-search::placeholder{
+    
+    color: var(--input-color);
+    
+}
+i.bx.bx-search::before{
+   content: "\ebf7";
+   display: block;
+   position: relative;
+    left: 28px;
+    top: 2.6px;
+    color: var(--input-color);
+}
+.header_sub1-key.bx.bx-skip-previous::before{
+    content: "";
+    display: block;
+    position:relative;
+    top:5px
+}
+.header_sub1-key.bx.bx-skip-next::before{
+    content: "\ec11";
+    display: block;
+    position:relative;
+    top:5px
+}
+
+.header_sub2-item{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.header_sub2:last-child{
+    margin-right: 30px;
+}
+
+
+/* container */
+
+.container{
+    display: flex;
+    height: 100%;
+    color: var(--text-color-container);
+}
+.container_sub1{
+    /* background-color: #4d3f3f; */
+
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:20px;
+}
+.container_sub2{
+    /* background-color: #253737; */
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+.container_sub2-item1{
+    flex:1;
+    
+}
+.container_sub2-ul{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 2px;
+   
+}
+.container_sub2-li{
+    padding: 11px;
+    margin-top: 10px;
+}
+.container_sub2-li:hover{
+    background-color: var(--color-hover);
+}
+.container_sub2-item2{
+    flex:10;
+    display: flex;
+    flex-direction: column;
+}
+.container_sub2-link{
+    color: var(--text-color-container);
+}
+.container_sub2-item2__header{
+    flex:1;
+}
+.container_sub2-item2__playlist{
+    flex: 13;
+    display: flex;
+    flex-direction: column;
+}
+.song{
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.head_image{
+   max-width: 41px;
+   height: 37px; 
+   padding-left: 10px;
+}
+.p_body{
+    position: absolute;
+    left: 100px;
+}
+.nameSong{
+    color: var(--text-color);
+    font-size: 15px;
+    
+}
+.author{
+    color: var(--text-color);
+    font-size:10px;
+   
+    margin-top: 5px;
+}
+.p_option{
+    position: absolute;
+    right: 0;
+}
+.song.active,
+.song:hover{
+    background-color: #2f2739;
+    border-left: solid 3px var(--text-color);
+    cursor: pointer;
+}
+
+/* container sub 1 */
+
+.container_sub1{
+
+}
+.cd_img{
+    width: 200px;
+    border-radius: 60%;
+}
+
+.control > :hover{
+    background-color: red;
+}
+.progessbar{
+    width: 250px;
+}
+.header_h1{
+    font-size: 16px;
+   
+}
+.header_p{
+    font-size: 15px;
+    padding-bottom: 7px;
+}
+.control{
+    display: flex;
+}
+.previous{
+
+}
+.timer{
+    display: flex;
+    width: 250px;
+  
+    justify-content: space-between;
+}
+
+.header_name_song{
+    display: flex;
+    position: relative;
+}
+.header_name_song > i{
+    position: absolute;
+    left: 10px;
+    top:11px
+}
+.header_name_song > h1{
+    font-size : 18px;
+    padding-left: 38px;
+    padding-top: 6px;
+    color: #847f8a;
+    cursor: default;
+}

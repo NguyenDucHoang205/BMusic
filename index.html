@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- style icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <style>
+        @-webkit-keyframes snowflakes-fall {
+          0% {top:-10%}
+          100% {top:100%}
+        }
+        @-webkit-keyframes snowflakes-shake {
+          0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
+          50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
+        }
+        @keyframes snowflakes-fall {
+          0% {top:-10%}
+          100% {top:100%}
+        }
+        @keyframes snowflakes-shake {
+          0%,100%{ transform:translateX(0)}
+          50% {transform:translateX(80px)}
+        }
+        .snowflake {
+          color: #fff;
+          font-size: 1em;
+          font-family: Arial, sans-serif;
+          text-shadow: 0 0 5px #000;
+          position:fixed;
+          top:-10%;
+          z-index:9999;
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;
+          user-select:none;
+          cursor:default;
+          -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+          -webkit-animation-duration:10s,3s;
+          -webkit-animation-timing-function:linear,ease-in-out;
+          -webkit-animation-iteration-count:infinite,infinite;
+          -webkit-animation-play-state:running,running;
+          animation-name:snowflakes-fall,snowflakes-shake;
+          animation-duration:10s,3s;
+          animation-timing-function:linear,ease-in-out;
+          animation-iteration-count:infinite,infinite;
+          animation-play-state:running,running;
+        }
+        .snowflake:nth-of-type(0){
+          left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+        }
+        .snowflake:nth-of-type(1){
+          left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
+        }
+        .snowflake:nth-of-type(2){
+          left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
+        }
+        .snowflake:nth-of-type(3){
+          left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
+        }
+        .snowflake:nth-of-type(4){
+          left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
+        }
+        .snowflake:nth-of-type(5){
+          left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
+        }
+        .snowflake:nth-of-type(6){
+          left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
+        }
+        .snowflake:nth-of-type(7){
+          left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
+        }
+        .snowflake:nth-of-type(8){
+          left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
+        }
+        .snowflake:nth-of-type(9){
+          left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
+        }
+        .snowflake:nth-of-type(10){
+          left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
+        }
+        .snowflake:nth-of-type(11){
+          left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
+        }
+      </style>
+</head>
+<!-- body -->
+
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+      </div>
+    <div class="main">
+        <!-- main bên trái -->
+        <div class="main_sub1">
+            <div class="logo ">
+                <img class="logo_pic" src="./anh/Logo.png">
+            </div>
+            <ul class="main_sub1-list">
+                <li class="main_sub1-item bx bx-music">
+                    <a href="./index.html" class="main_sub1-item-link ">Nghe Nhạc</a>
+                </li>
+                <li class="main_sub1-item bx bx-movie">
+                    <a href="" class="main_sub1-item-link">Xem phim</a>
+                </li>
+                <li class="main_sub1-item bx bx-book">
+                    <a href="" class="main_sub1-item-link">Học tiếng anh</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main bên phải -->
+        <div class="main_sub2">
+            <!-- header -->
+            <div class="header">
+                <ul class="header_sub">
+                    <div class="header_sub1">
+                        
+                        <i class='bx bx-search'></i>
+                        <input class="header_sub-search" type="text" placeholder="Nhập để tìm kiếm...">
+                    </div>
+                    <div class="header_sub2">
+                        <li class="header_sub2-item moon">
+                            <i class='bx bx-moon bx-sm' ></i>
+                       </li>
+                        <li class="header_sub2-item moon ">
+                            <i class='bx bx-sun bx-sm' ></i>
+                        </li>
+                      
+                    </div>
+                </ul>
+            </div>
+            <!-- container -->
+            <div class="container">
+                <div class="container_sub1">
+                    <div class=".container_header_sub1">
+                        <h1 class ="header_h1">Now Playing</h1>
+                        <p class="header_p">Name Song</p>
+                    </div>
+                    <div class="cd">
+                        <img src="./anh/dontcoi.jpg" alt="" class="cd_img">
+                    </div>
+                    <div class="control ">
+                       <div class="previous">
+                        <i class='bx bx-skip-previous bx-md'></i>
+                       </div>
+                        <div class="play">
+                            <i class='bx  bx-md playing bx-pause '></i>
+                        </div>
+                        <div class="next">
+                            <i class='bx bx-skip-next bx-md'></i>
+                        </div>
+                    </div>
+                    <input type="range" class="progessbar" value="0" step="1" min="0" max="100">
+                    <div class="timer">
+                        <p class="timer_start">0:00</p>
+                        <p class="timer_end">3:00</p>
+                    </div>
+                    <audio src="" id="audio"></audio>
+                </div>
+                <div class="container_sub2">
+                    <div class="container_sub2-item1">
+                        <ul class="container_sub2-ul">
+                            <li class="container_sub2-li">
+                                <a href="" class="container_sub2-link">Nhạc Việt</a>
+                            </li>
+                            <li class="container_sub2-li">
+                                <a href="" class="container_sub2-link">Nhạc US/UK</a>
+                            </li>
+                            <li class="container_sub2-li">
+                                <a href="" class="container_sub2-link">Nhạc Trung</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container_sub2-item2">
+                        <div class="container_sub2-item2__header">
+                            <div class="header_name_song">
+                                <i class='bx bxs-playlist'></i>
+                                <h1>Bài hát</h1>
+                            </div>
+                        </div>
+                        <div class="container_sub2-item2__playlist playlistt">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer">
+
+            </div>
+        </div>
+    </div>
+</body>
+<!-- js -->
+<script src="./main.js"></script>
+
+</html>

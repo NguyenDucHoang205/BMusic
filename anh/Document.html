@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/NgheNhac/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <!-- style icon -->
+    <link href="./Document_files/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Document_files/css2" rel="stylesheet">
+    <style>
+        @-webkit-keyframes snowflakes-fall {
+          0% {top:-10%}
+          100% {top:100%}
+        }
+        @-webkit-keyframes snowflakes-shake {
+          0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
+          50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
+        }
+        @keyframes snowflakes-fall {
+          0% {top:-10%}
+          100% {top:100%}
+        }
+        @keyframes snowflakes-shake {
+          0%,100%{ transform:translateX(0)}
+          50% {transform:translateX(80px)}
+        }
+        .snowflake {
+          color: #fff;
+          font-size: 1em;
+          font-family: Arial, sans-serif;
+          text-shadow: 0 0 5px #000;
+          position:fixed;
+          top:-10%;
+          z-index:9999;
+          -webkit-user-select:none;
+          -moz-user-select:none;
+          -ms-user-select:none;
+          user-select:none;
+          cursor:default;
+          -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+          -webkit-animation-duration:10s,3s;
+          -webkit-animation-timing-function:linear,ease-in-out;
+          -webkit-animation-iteration-count:infinite,infinite;
+          -webkit-animation-play-state:running,running;
+          animation-name:snowflakes-fall,snowflakes-shake;
+          animation-duration:10s,3s;
+          animation-timing-function:linear,ease-in-out;
+          animation-iteration-count:infinite,infinite;
+          animation-play-state:running,running;
+        }
+        .snowflake:nth-of-type(0){
+          left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+        }
+        .snowflake:nth-of-type(1){
+          left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
+        }
+        .snowflake:nth-of-type(2){
+          left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
+        }
+        .snowflake:nth-of-type(3){
+          left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
+        }
+        .snowflake:nth-of-type(4){
+          left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
+        }
+        .snowflake:nth-of-type(5){
+          left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
+        }
+        .snowflake:nth-of-type(6){
+          left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
+        }
+        .snowflake:nth-of-type(7){
+          left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
+        }
+        .snowflake:nth-of-type(8){
+          left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
+        }
+        .snowflake:nth-of-type(9){
+          left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
+        }
+        .snowflake:nth-of-type(10){
+          left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
+        }
+        .snowflake:nth-of-type(11){
+          left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
+        }
+      </style>
+</head>
+<!-- body -->
+
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+      </div>
+    <div class="main">
+        <!-- main bên trái -->
+        <div class="main_sub1">
+            <div class="logo ">
+                <img class="logo_pic" src="./Document_files/Logo.png">
+            </div>
+            <ul class="main_sub1-list">
+                <li class="main_sub1-item bx bx-music">
+                    <a href="http://127.0.0.1:5500/NgheNhac/index.html" class="main_sub1-item-link ">Nghe Nhạc</a>
+                </li>
+                <li class="main_sub1-item bx bx-movie">
+                    <a href="http://127.0.0.1:5500/NgheNhac/index.html" class="main_sub1-item-link">Xem phim</a>
+                </li>
+                <li class="main_sub1-item bx bx-book">
+                    <a href="http://127.0.0.1:5500/NgheNhac/index.html" class="main_sub1-item-link">Học tiếng anh</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main bên phải -->
+        <div class="main_sub2">
+            <!-- header -->
+            <div class="header">
+                <ul class="header_sub">
+                    <div class="header_sub1">
+                        
+                        <i class="bx bx-search"></i>
+                        <input class="header_sub-search" type="text" placeholder="Nhập để tìm kiếm...">
+                    </div>
+                    <div class="header_sub2">
+                        <li class="header_sub2-item moon"><a href="http://127.0.0.1:5500/NgheNhac/index.html" class=" bx bx-moon bx-sm"></a></li>
+                        <li class="header_sub2-item sun"><a href="http://127.0.0.1:5500/NgheNhac/index.html" class=" bx bx-sun bx-sm"></a>
+                        </li>
+                      
+                    </div>
+                </ul>
+            </div>
+            <!-- container -->
+            <div class="container">
+                <div class="container_sub1">
+                    <div class=".container_header_sub1">
+                        <h1 class="header_h1">Đừng quên tên anh</h1>
+                        <p class="header_p">Hoa Vinh</p>
+                    </div>
+                    <div class="cd">
+                        <img src="./Document_files/dungquentenanh.jpg" alt="" class="cd_img">
+                    </div>
+                    <div class="control ">
+                       <div class="previous">
+                        <i class="bx bx-skip-previous bx-md"></i>
+                       </div>
+                        <div class="play">
+                            <i class="bx  bx-md playing bx-pause "></i>
+                        </div>
+                        <div class="next">
+                            <i class="bx bx-skip-next bx-md"></i>
+                        </div>
+                    </div>
+                    <input type="range" class="progessbar" value="0" step="1" min="0" max="100">
+                    <div class="timer">
+                        <p class="timer_start">00:00</p>
+                        <p class="timer_end">06:33</p>
+                    </div>
+                    <audio src="./nhac/dungquentenanh.mp3" id="audio"></audio>
+                </div>
+                <div class="container_sub2">
+                    <div class="container_sub2-item1">
+                        <ul class="container_sub2-ul">
+                            <li class="container_sub2-li">
+                                <a href="http://127.0.0.1:5500/NgheNhac/index.html" class="container_sub2-link">Nhạc Việt</a>
+                            </li>
+                            <li class="container_sub2-li">
+                                <a href="http://127.0.0.1:5500/NgheNhac/index.html" class="container_sub2-link">Nhạc US/UK</a>
+                            </li>
+                            <li class="container_sub2-li">
+                                <a href="http://127.0.0.1:5500/NgheNhac/index.html" class="container_sub2-link">Nhạc Trung</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container_sub2-item2">
+                        <div class="container_sub2-item2__header">
+                            <div class="header_name_song">
+                                <i class="bx bxs-playlist"></i>
+                                <h1>Bài hát</h1>
+                            </div>
+                        </div>
+                        <div class="container_sub2-item2__playlist playlistt"><div class="song active" data-index="0">
+            <div class="p_head">
+                <i class="bx bxs-music"></i>
+                <img src="./Document_files/dungquentenanh.jpg" class="head_image" alt="">
+            </div>
+            <div class="p_body">
+                <h1 class="nameSong">
+                    Đừng quên tên anh 
+                </h1>
+                <p class="author">
+                    Hoa Vinh
+                </p>
+              
+            </div>
+                <div class="p_option">
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+            </div><div class="song " data-index="1">
+            <div class="p_head">
+                <i class="bx bxs-music"></i>
+                <img src="./Document_files/thucuoi.jpg" class="head_image" alt="">
+            </div>
+            <div class="p_body">
+                <h1 class="nameSong">
+                    Thu Cuối 
+                </h1>
+                <p class="author">
+                    YanBi
+                </p>
+              
+            </div>
+                <div class="p_option">
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+            </div><div class="song " data-index="2">
+            <div class="p_head">
+                <i class="bx bxs-music"></i>
+                <img src="./Document_files/lunglo.jpg" class="head_image" alt="">
+            </div>
+            <div class="p_body">
+                <h1 class="nameSong">
+                    Lửng lơ 
+                </h1>
+                <p class="author">
+                    MASEW x BRAY
+                </p>
+              
+            </div>
+                <div class="p_option">
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+            </div><div class="song " data-index="3">
+            <div class="p_head">
+                <i class="bx bxs-music"></i>
+                <img src="./Document_files/nhuanhdathay.jpg" class="head_image" alt="">
+            </div>
+            <div class="p_body">
+                <h1 class="nameSong">
+                    Như anh đã thấy 
+                </h1>
+                <p class="author">
+                    PhucXp ft. Freak D
+                </p>
+              
+            </div>
+                <div class="p_option">
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+            </div><div class="song " data-index="4">
+            <div class="p_head">
+                <i class="bx bxs-music"></i>
+                <img src="./Document_files/nguoinhuchungta.jpg" class="head_image" alt="">
+            </div>
+            <div class="p_body">
+                <h1 class="nameSong">
+                    Người Như Chúng Ta 
+                </h1>
+                <p class="author">
+                    Mr.Siro
+                </p>
+              
+            </div>
+                <div class="p_option">
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+            </div><div class="song " data-index="5">
+            <div class="p_head">
+                <i class="bx bxs-music"></i>
+                <img src="./Document_files/duoinhungconmua.jpg" class="head_image" alt="">
+            </div>
+            <div class="p_body">
+                <h1 class="nameSong">
+                    Dưới Những Cơn Mưa 
+                </h1>
+                <p class="author">
+                    Mr.Siro
+                </p>
+              
+            </div>
+                <div class="p_option">
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+            </div><div class="song " data-index="6">
+            <div class="p_head">
+                <i class="bx bxs-music"></i>
+                <img src="./Document_files/lkthattinh.jpg" class="head_image" alt="">
+            </div>
+            <div class="p_body">
+                <h1 class="nameSong">
+                    LIÊN KHÚC THẤT TÌNH REMAKE 
+                </h1>
+                <p class="author">
+                    TRỊNH ĐÌNH QUANG
+                </p>
+              
+            </div>
+                <div class="p_option">
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+            </div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer">
+
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<script src="./Document_files/main.js.tải xuống"></script>
+
+</body><!-- js --></html>
